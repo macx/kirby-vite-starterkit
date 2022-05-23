@@ -1,0 +1,19 @@
+.header {
+  padding: var(--spacing) 0;
+  border-bottom: 1px solid var(--clr-line);
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing);
+  }
+
+  h1 {
+    margin: 0 0 2em;
+  }
+}
+
+#brand {
+  display: block;
+  width: 2rem;
+}

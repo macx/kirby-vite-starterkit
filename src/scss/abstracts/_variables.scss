@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light dark;
+
+  --vh: 1vh;
+
+  --spacing: 1.25rem;
+  --spacing--small: 0.9375rem;
+  --spacing-xsmall: 0.625rem;
+  --spacing-large: 2.5rem;
+
+  --content-spacing: var(--spacing-large);
+
+  --font-family: 'Roboto';
+  --font-weight: 300;
+  --font-size: 1rem;
+  --font-size--small: 0.875rem;
+
+  --clr-bg: hsl(210, 40%, 98%);
+  --clr-text: hsl(222, 47%, 11%);
+  --clr-line: hsl(213, 27%, 84%);
+
+  @media (prefers-color-scheme: dark) {
+    --clr-bg: hsl(210, 40%, 2%);
+    --clr-text: hsl(210, 40%, 98%);
+    --clr-line: hsl(215, 19%, 34%);
+  }
+}

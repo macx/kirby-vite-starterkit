@@ -1,0 +1,38 @@
+# ┌────────────────────────────────┐
+#   SYSTEM AND IDE
+# └────────────────────────────────┘
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vscode
+.DS_Store
+
+# ┌────────────────────────────────┐
+#   KIRBY AND VITE
+# └────────────────────────────────┘
+
+# Kirby files and License
+kirby
+vendor
+node_modules
+/site/config/.license
+.lock
+
+# Frontend
+/public/assets/
+/public/dist/
+
+# Temporary files, Accounts,
+# Cache and Sessions
+/public/media/*
+/site/plugins/*
+#!/site/plugin/custom
+/storage/accounts/*
+/storage/cache/*
+/storage/sessions/*
+
+!.gitkeep
