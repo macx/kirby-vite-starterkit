@@ -16,7 +16,6 @@ $entry    = "templates/$template/index.js";
   <title><?= $site->title() ?></title>
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="<?= $site->description(); ?>">
-  <?= vite()->client() ?>
   <?= vite()->css() ?>
   <?php
   if (file_exists(dirname(__DIR__) . '/../src/' . $entry)) {

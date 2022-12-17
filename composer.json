@@ -4,8 +4,8 @@
   "type": "project",
   "require": {
     "php": ">=7.4.0 <8.2.0",
-    "getkirby/cms": "^3.6",
-    "arnoson/kirby-vite": "^2.5"
+    "getkirby/cms": "^3.8",
+    "arnoson/kirby-vite": "^3.0"
   },
   "config": {
     "optimize-autoloader": true,

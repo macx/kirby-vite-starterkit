@@ -21,6 +21,7 @@ vendor
 node_modules
 /site/config/.license
 .lock
+.dev
 
 # Frontend
 /public/assets/
