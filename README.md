@@ -33,8 +33,6 @@ $ git pull updates
 
 ## Development
 
-Foobar
-
 <!-- prettier-ignore -->
 | Folder | What's in it? |
 | :-- | :--  |

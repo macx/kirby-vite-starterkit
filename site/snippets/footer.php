@@ -15,7 +15,7 @@ $entry    = (file_exists(dirname(__DIR__) . '/../src/' . $entry)) ? $entry : 'ap
   </div>
 </footer>
 
-<?= vite()->js($entry) ?>
+<?= vite()->js($entry, ['defer' => true]) ?>
 
 </body>
 

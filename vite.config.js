@@ -27,6 +27,7 @@ export default ({ mode }) => ({
 
   build: {
     outDir: resolve(process.cwd(), 'public/dist'),
+    assetsDir: 'assets',
     emptyOutDir: true,
     rollupOptions: { input },
   },
@@ -38,6 +39,7 @@ export default ({ mode }) => ({
         '../site/(templates|snippets|controllers|models|plugins)/**/*.php',
         '../site/blueprints/**/*.yml',
       ],
+      kirbyConfigDir: 'site/config',
     }),
   ],
 });
