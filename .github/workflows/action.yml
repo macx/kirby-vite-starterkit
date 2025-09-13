@@ -22,9 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run:
-        name: Install pnpm package manager
-        command: |
+      - name: Install pnpm package manager
+        run: |
           npm install --global corepack@latest
           corepack enable
           corepack prepare pnpm@latest --activate
@@ -42,7 +41,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-php-
 
-      - name: Install dependencies
+      - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress
 
       - name: Use Node.js ${{ matrix.node-version }}
@@ -51,6 +50,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
 
-      - run: pnpm install --immutable
+      - name: Install node dependencies
+        run: pnpm install --immutable
 
-      - run: pnpm run build
+      - name: Build site
+        run: pnpm run build
