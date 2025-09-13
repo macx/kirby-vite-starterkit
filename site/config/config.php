@@ -31,7 +31,7 @@ return [
   'sitemap.ignore' => ['error'],
 
   'arnoson.kirby-vite' => [
-    'entry' => 'src/app.js',
+    'entry' => 'src/main.ts',
     'outDir' => 'dist',
     'legacy' => false,
     'module' => true

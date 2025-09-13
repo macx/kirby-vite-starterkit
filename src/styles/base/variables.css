@@ -25,5 +25,8 @@
     --clr-line: hsl(215, 19%, 34%);
   }
 
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+
   scroll-behavior: smooth;
 }

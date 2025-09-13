@@ -21,10 +21,10 @@ node_modules
 /site/config/.license
 .lock
 .dev
+dist
 
 # Frontend
 /public/assets/
-/public/dist/
 
 # Temporary files, Accounts,
 # Cache and Sessions
