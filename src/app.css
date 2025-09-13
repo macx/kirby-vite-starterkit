@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+@layer base, components;
+
+/*
+┌──────────────────────────────────┐
+  BASE
+└──────────────────────────────────┘
+*/
+
+@import './styles/base/fonts' layer(base);
+@import './styles/base/variables' layer(base);
+@import './styles/base/layout' layer(base);
+@import './styles/base/typo' layer(base);
+
+/*
+┌──────────────────────────────────┐
+  COMPONENTS
+└──────────────────────────────────┘
+*/
+
+@import './styles/components/header' layer(components);
+@import './styles/components/footer' layer(components);

@@ -24,4 +24,6 @@
     --clr-text: hsl(210, 40%, 98%);
     --clr-line: hsl(215, 19%, 34%);
   }
+
+  scroll-behavior: smooth;
 }

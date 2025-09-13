@@ -39,8 +39,7 @@ tabs:
             label: Links
             type: info
             text: |
-              * (link: https://analytics.google.com/analytics/web/?authuser=1#/p255816290/reports/defaulthome text: Google Analytics target: _blank rel: noopener)
-              * (link: https://kunden.aditsystems.de/liveconfig/login text: Hosting target: _blank rel: noopener)
+              * (link: https://de.wikipedia.org/wiki/Hosting text: Hosting target: _blank rel: noopener)
 
       - width: 1/3
         sections:
@@ -49,7 +48,7 @@ tabs:
             headline:
               en: Blog Articles
               de: Blog-Artikel
-            parent: site.find("aktuell")
+            parent: site.find("blog")
             status: published
             sortBy: date desc
 
@@ -58,7 +57,7 @@ tabs:
             headline:
               en: Planned Articles
               de: Geplante Artikel
-            parent: site.find("aktuell")
+            parent: site.find("blog")
             status: draft
             sortBy: date desc
 
