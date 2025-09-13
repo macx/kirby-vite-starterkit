@@ -39,6 +39,7 @@ git clone git@github.com:macx/kirby-vite-starterkit.git my-new-project
 cd my-new-project
 composer install
 corepack enable
+pnpm install
 ```
 
 To get feature updates from this starterkit, add a remote host entry and pull a new version. Be sure to commit your changes before. If you just want to update Kirby, [do it on your own](https://getkirby.com/docs/cookbook/setup/composer#updating-kirby).
