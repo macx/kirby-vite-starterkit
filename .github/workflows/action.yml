@@ -22,11 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Restore pnpm Package Cache
-        keys:
-          - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
-
-          - run:
+      - run:
         name: Install pnpm package manager
         command: |
           npm install --global corepack@latest
