@@ -45,8 +45,8 @@ pnpm install
 To get feature updates from this starterkit, add a remote host entry and pull a new version. Be sure to commit your changes before. If you just want to update Kirby, [do it on your own](https://getkirby.com/docs/cookbook/setup/composer#updating-kirby).
 
 ```shell
-git remote add updates git@github.com:macx/kirby-vite-starterkit.git
-git pull updates --rebase --autostash
+git remote add starterkit git@github.com:macx/kirby-vite-starterkit.git
+git pull starterkit main --rebase --autostash
 ```
 
 ## Development
@@ -77,7 +77,7 @@ pnpm run preview
 | `/src/assets` | Folder for your global Fonts and Images. |
 | `/src/templates` | Optionally, every page can contain it's own styles `index.css` and script `index.js`. |
 | `/site` | Project folder for Kirbys [Config](https://getkirby.com/docs/guide/configuration), [Blueprints](https://getkirby.com/docs/guide/blueprints/introduction), [Plugins](https://getkirby.com/docs/guide/plugins/plugin-basics), [Snippets](https://getkirby.com/docs/guide/templates/snippets) and [Templates](https://getkirby.com/docs/guide/templates/basics). |
-| `/public` | The [Public folder](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup) is your document root of your website, including the bundled assets from Vite. |
+| `/dist` | The [Public folder](https://getkirby.com/docs/guide/configuration#custom-folder-setup__public-folder-setup) is your document root of your website, including the bundled assets from Vite. |
 
 ## Thanks to
 
