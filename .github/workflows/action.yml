@@ -17,26 +17,44 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [20]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - name: Restore pnpm Package Cache
+        keys:
+          - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
+
+          - run:
+        name: Install pnpm package manager
+        command: |
+          npm install --global corepack@latest
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm config set store-dir .pnpm-store
+
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
+
       - name: Cache Composer packages
         id: composer-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: vendor
           key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             ${{ runner.os }}-php-
+
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
+
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
-      - run: yarn install --immutable
-      - run: yarn run build
+          cache: "pnpm"
+
+      - run: pnpm install --immutable
+
+      - run: pnpm run build
