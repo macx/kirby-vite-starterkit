@@ -15,6 +15,7 @@
     "release": "release-it"
   },
   "devDependencies": {
+    "@prettier/plugin-php": "^0.24.0",
     "concurrently": "^9.2.1",
     "open-cli": "^8.0.0",
     "release-it": "^19.0.4",
